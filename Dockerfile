@@ -21,11 +21,11 @@ RUN apt install -y globaleaks
 RUN sed -i -n -e '/^APPARMOR_SANDBOXING=/!p' -e '$aAPPARMOR_SANDBOXING=0' /etc/default/globaleaks
 RUN sed -i -n -e '/^NETWORK_SANDBOXING=/!p' -e '$aNETWORK_SANDBOXING=0' /etc/default/globaleaks
 
-# ports needed for
+# ports needed for globaleaks
 EXPOSE 80
 EXPOSE 443
 
-# ports for toe=r
+# ports for tor
 EXPOSE 8082
 EXPOSE 8083
 
