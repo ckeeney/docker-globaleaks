@@ -33,5 +33,6 @@ EXPOSE 8083
 COPY ./docker-entrypoint.sh /opt/docker-entrypoint.sh
 RUN chmod +x /opt/docker-entrypoint.sh
 ENTRYPOINT /opt/docker-entrypoint.sh
-
+VOLUME /var/globaleaks/
+VOLUME /etc/default/
 # todo: this image doesn't shut down gracefully, probably because of the docker-entrypoint above.

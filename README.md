@@ -12,8 +12,12 @@ services:
     ports:
       - 80:80
       - 443:443
+    volumes:
+      - ./data/var:/var/globaleaks
+      - ./data/etc:/etc/default/globaleaks
+
 ``` 
 
 Here is a oneliner for `docker`:  Actually, I use `docker-compose` and am not going to bother looking this up.  Submit a pull request.
 
-Also, you should mount some volumes in some places so you don't lose all your data.  It's a work in progress.
+This container does not stop gracefully, probably because of the docker-entrypoint.sh stuff going on. 
