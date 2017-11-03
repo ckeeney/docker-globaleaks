@@ -1,9 +1,0 @@
-# This is a configuration file for /etc/init.d/globaleaks;
-# it allows you to perform common modifications to the behavior
-# of the globaleaks daemon.
-#
-# Default settings can be found at: /usr/share/globaleaks/default
-
-# disable apparmor and network_sandboxing since we are already inside docker.
-APPARMOR_SANDBOXING=0
-NETWORK_SANDBOXING=0

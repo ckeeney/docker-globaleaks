@@ -1,7 +1,7 @@
 version: "3"
 services:
   globaleaks:
-    image: myglobaleaks
+    image: ckeeney/docker-globaleaks
     build: .
     cap_add:
       - NET_ADMIN
