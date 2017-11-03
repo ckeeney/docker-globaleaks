@@ -10,4 +10,3 @@ services:
       - 443:443
     volumes:
       - ./data/var:/var/globaleaks
-      - ./data/etc:/etc/default/globaleaks

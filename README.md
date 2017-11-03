@@ -7,14 +7,14 @@ version: "3"
 services:
   globaleaks:
     image: ckeeney/docker-globaleaks
+    build: .
     cap_add:
       - NET_ADMIN
     ports:
       - 80:80
       - 443:443
     volumes:
-      - ./data/var:/var/globaleaks
-      - ./data/etc:/etc/default/globaleaks
+      - ./data/var/:/var/globaleaks
 
 ``` 
 
