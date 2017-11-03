@@ -1,4 +1,4 @@
-This is a docker implementation of Globaleaks.
+This is a docker implementation of [Globaleaks](https://www.globaleaks.org/).
 
 Here is a minimal `docker-compose.yml` needed to run this image:
 
