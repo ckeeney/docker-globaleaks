@@ -10,3 +10,4 @@ services:
       - 443:443
     volumes:
       - ./data/var:/var/globaleaks
+# noop for rebuild
