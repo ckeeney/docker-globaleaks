@@ -1,12 +1,14 @@
 This is a docker implementation of [Globaleaks](https://www.globaleaks.org/).
 
+It is [available on DockerHub](https://hub.docker.com/r/ckeeney/globaleaks/).
+
 Here is a minimal `docker-compose.yml` needed to run this image:
 
 ```yaml
 version: "3"
 services:
   globaleaks:
-    image: ckeeney/docker-globaleaks
+    image: ckeeney/globaleaks
     build: .
     cap_add:
       - NET_ADMIN
